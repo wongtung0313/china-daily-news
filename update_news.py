@@ -8,10 +8,24 @@ import html
 import sys
 
 RSS_SOURCES = [
-    {"name": "中新网即时", "url": "https://www.chinanews.com.cn/rss/scroll-news.xml", "category": "综合", "priority": 1},
-    {"name": "人民网时政", "url": "http://www.people.com.cn/rss/politics.xml", "category": "时政", "priority": 2},
-    {"name": "中国日报-中国", "url": "http://www.chinadaily.com.cn/rss/china_rss.xml", "category": "综合", "priority": 3},
-    {"name": "中国日报-财经", "url": "http://www.chinadaily.com.cn/rss/bizchina_rss.xml", "category": "经济", "priority": 3},
+    {
+        "name": "人民网时政",
+        "url": "http://www.people.com.cn/rss/politics.xml",
+        "category": "时政",
+        "priority": 1,
+    },
+    {
+        "name": "新华网时政",
+        "url": "http://www.xinhuanet.com/politics/news_politics.xml",
+        "category": "时政",
+        "priority": 2,
+    },
+    {
+        "name": "学习时报",
+        "url": "https://rsshub.app/cntheory/paper",
+        "category": "理论",
+        "priority": 3,
+    },
 ]
 
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; ChinaDailyNewsBot/1.0)", "Accept": "application/rss+xml, application/xml, text/xml, */*"}
